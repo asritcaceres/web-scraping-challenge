@@ -2,11 +2,9 @@ from splinter import Browser
 from bs4 import BeautifulSoup
 import pandas as pd
 
-
 def init_browser():
     executable_path = {"executable_path":"Mission_to_Mars/chromedriver.exe"}
     return Browser("chrome", **executable_path, headless=True)
-
 
 def scrape():
     browser = init_browser()
